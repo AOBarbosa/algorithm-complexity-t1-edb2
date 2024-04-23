@@ -101,6 +101,22 @@ public class Main {
         }
     }
 
+    public static void fibonacci() {
+        Fibonacci test = new Fibonacci();
+
+        // Teste para a função iterative
+        System.out.println("Teste para a função iterative:");
+        test.testIterative();
+
+        // Teste para a função recursive
+        System.out.println("\nTeste para a função recursive:");
+        test.testRecursive();
+
+        // Teste para a função dynamicRecursive
+        System.out.println("\nTeste para a função dynamicRecursive:");
+        test.testDynamicRecursive();
+    }
+
     public static void main(String[] args) {
         sequentialSearch();
 
@@ -111,5 +127,7 @@ public class Main {
         System.out.println();
 
         checkSorted();
+
+        fibonacci();
     }
 }
